@@ -1,0 +1,47 @@
+{
+  "name": "movie-booking-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "dotenv -- node index",
+    "dev": "dotenv -- nodemon index",
+    "seed": "node seeds/seed-all.js",
+    "seed:reviews": "dotenv -- node seeds/seed-reviews.js",
+    "migrate:passwords": "dotenv -- node scripts/migrate-passwords.js",
+    "security:audit": "npm audit",
+    "security:audit:fix": "npm audit fix",
+    "security:check": "npm outdated"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/dompurify": "^3.0.5",
+    "axios": "^1.7.7",
+    "bcrypt": "^6.0.0",
+    "cashfree-pg": "^4.2.3",
+    "compression": "^1.8.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "dompurify": "^3.3.0",
+    "dotenv-cli": "^7.4.2",
+    "express": "^4.19.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.2",
+    "nodemon": "^3.1.4",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "xss-clean": "^0.1.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.2.0"
+  }
+}
